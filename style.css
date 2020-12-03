@@ -1,0 +1,29 @@
+body{
+    padding: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.title {
+    margin: 200px;
+    font-size: 50px;
+    
+}
+
+/* .clock .title{
+      width: 1000px;
+} */
+
+.clock {
+    border: 2px solid blue;
+    border-radius: 50px;
+}
+
+#time{
+    font-size: 50px;
+    padding: 20px;
+}
+
+#month{
+    padding-top: 20px;
+}
+

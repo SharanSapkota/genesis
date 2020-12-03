@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="index.js"></script> -->
+
+</head>
+<body>
+<label class="title">DIGITAL CLOCK</label>
+  <div class="clock" >
+          
+       <div id="month" ></div>
+        <div id="time" ></div>
+
+  </div>
+
+
+  <script>
+
+      
+const timeHours= () => {
+
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  const days = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"]
+
+   const time = new Date()
+ 
+   var hours = time.getHours();
+   var minute = time.getMinutes();
+   var second = time.getSeconds();
+   const getMonth = time.getMonth()
+   const getDay = time.getDay()
+  
+   const month = months[getMonth-1]
+   const day = days[getDay]
+
+  const dateInNumber = getDay-1
+
+  
+
+  var second = (second<10) ?( "0" + second) : second
+ var  minute = (minute<10) ?( "0" + minute) : minute
+  var hours = (hours > 12)? hours - 12: hours
+   
+ 
+const getMonths = dateInNumber + " " + month + "; " + day
+
+document.getElementById("month").innerHTML = getMonths
+
+   const fullTime = hours + ":" + minute + ":" + second;
+
+   document.getElementById("time").innerHTML = fullTime
+
+
+}
+
+window.setInterval(timeHours, 1)
+
+
+
+  </script>
+</body>
+</html>
