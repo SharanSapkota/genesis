@@ -2,21 +2,25 @@
 const places = () => {
 
     placesList = ["Biratnagar", "Lalitpur", "Patan", "Kathmandu", "Pokhara", "Palpa"]
+    const emp = [""]
 
    const lengthOfPlaces = placesList.length
 
 
-  // placesList.forEach((place) =>{
+  placesList.forEach((place) =>{
+  
+    console.log(place)
     
-  //   //document.write(place + "<br>")
-  //   window.document.getElementById("plac").innerHTML="<ul>" +  place + "</ul>" 
-  // })
+    document.write(place + "<br>")
+    // window.document.getElementById("plac").innerHTML="<ul>" +  emp.push() + "</ul>" 
+    console.log(emp.push)
+  })
 
 
-  for (var j = 0; j < lengthOfPlaces; j++) {
-      document.write(placesList[j] + "<br>")
-      // document.getElementById("plac").innerHTML="<li>" +  placesList[j] + "</li>"
-  }
+  // for (var j = 0; j < lengthOfPlaces; j++) {
+  //     document.write(placesList[j] + "<br>")
+  //      document.getElementById("plac").innerHTML="<li>" +  placesList[j] + "</li>"
+  // }
 
    
   document.write("My favourite places: " + lengthOfPlaces + "<br>")
